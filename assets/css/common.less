@@ -1,0 +1,139 @@
+html {
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  // font-family: 'Helvetica','PingFang SC','sans-serif';
+  font-family: 'SF Pro-Rounded', 'SF Pro', 'Helvetica', 'Roboto', 'Arial';
+  background: #F9F9F9;
+  height: 100%;
+}
+
+// 防止点击出现阴影
+a, img, button, input, textarea, div {
+  -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea {
+  color: inherit;
+  font: inherit;
+}
+
+a,
+input,
+button,
+textarea,
+[class*='van-'] {
+  &:focus {
+    outline: none;
+  }
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+}
+img[src=""],
+img:not([src]) {
+  opacity: 0;
+}
+
+.text-describe {
+  font-size: 12;
+  line-height: 28;
+}
+
+.text-blue {
+  color: #3370FF;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+// 通用主体容器
+.wrapper {
+  padding: 30;
+}
+
+// 左右padding 24的通用主题容器
+.narrow-padding-wrapper {
+  padding: 0 24;
+}
+
+// 两行文本溢出显示省略号
+.text-overflow-ellipsis-2 {
+  overflow : hidden;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+// 三行文本溢出显示省略号
+.text-overflow-ellipsis-3 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+// 五行文本溢出显示省略号
+.text-overflow-ellipsis-5 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+// 单行文本溢出
+.text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 骨架屏容器通用宽度
+.loading-skeleton-container {
+  width: 100%;
+
+  &.center {
+    margin: 0 auto;
+  }
+}
+
+// 导航吸顶
+.nav-bar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
